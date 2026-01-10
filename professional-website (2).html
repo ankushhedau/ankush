@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ankush Hedau | Thermal Engineer | NPDF IIT Hyderabad</title>
+    <meta name="description" content="National Post-Doctoral Fellow at IIT Hyderabad specializing in heat transfer, PCM systems, and thermal engineering research. 8+ SCI publications.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0066cc;
+            --primary-dark: #004fa3;
+            --primary-light: #e3f2fd;
+            --accent-color: #ff9800;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f5f5f5;
+            --bg-white: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .position {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+        }
+
+        .hero .tags {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Sections */
+        section {
+            background-color: var(--bg-white);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        /* Stats Grid */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-box {
+            background: var(--primary-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,102,204,0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f57c00;
+            transform: translateY(-2px);
+        }
+
+        /* Featured Project */
+        .project-card {
+            background: linear-gradient(135deg, var(--primary-light) 0%, white 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .project-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .project-meta-item {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .project-meta-label {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:hover {
+            background-color: var(--bg-light);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline-item {
+            padding-left: 2rem;
+            padding-bottom: 2rem;
+            border-left: 2px solid var(--primary-color);
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            border-left-color: transparent;
+        }
+
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            position: absolute;
+            left: -7px;
+            top: 0;
+        }
+
+        .timeline-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-meta {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .contact-item {
+            padding: 1rem;
+            background-color: var(--primary-light);
+            border-radius: 4px;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .skill-category {
+            background: var(--primary-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .skill-category h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .skill-item {
+            padding: 0.5rem 0;
+            color: var(--text-dark);
+        }
+
+        /* Publications */
+        .publication {
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-authors {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-journal {
+            color: var(--text-dark);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-details {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Achievements */
+        .achievement {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .achievement:last-child {
+            border-bottom: none;
+        }
+
+        .achievement-icon {
+            font-size: 1.5rem;
+            min-width: 2rem;
+        }
+
+        .achievement-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .achievement-content p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero .position {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            nav, footer {
+                display: none;
+            }
+
+            section {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Hidden Sections */
+        .hidden {
+            display: none;
+        }
+
+        /* Active Link */
+        nav a.active {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#research" class="nav-link">Research</a></li>
+            <li><a href="#publications" class="nav-link">Publications</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Dr. Ankush Jageshwar Hedau</h1>
+        <div class="position">
+            National Post-Doctoral Fellow (ANRF-NPDF)<br>
+            Indian Institute of Technology Hyderabad
+        </div>
+        <div class="tags">
+            <span class="tag">Thermal Engineering</span>
+            <span class="tag">Heat Transfer</span>
+            <span class="tag">CFD</span>
+            <span class="tag">Wearable Cooling</span>
+        </div>
+        <div class="button-group">
+            <a href="#research" class="btn btn-primary">View My Research</a>
+            <a href="#publications" class="btn btn-primary">Publications</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            
+            <h3>Professional Summary</h3>
+            <p>I am a dedicated thermal engineer and researcher with expertise in heat transfer enhancement, computational fluid dynamics (CFD), and sustainable thermal systems. Currently, I hold the position of National Post-Doctoral Fellow (ANRF-NPDF) at Indian Institute of Technology Hyderabad, where I lead groundbreaking research on wearable PCM-based cooling systems for heatstroke prevention.</p>
+
+            <h3>Research Expertise</h3>
+            <p>My research journey spans multiple leading Indian IITs, encompassing:</p>
+            <ul>
+                <li>Phase Change Material (PCM) Technology and Thermal Energy Storage</li>
+                <li>Heat Transfer Enhancement in Complex Geometries</li>
+                <li>Computational Fluid Dynamics (CFD) using ANSYS Fluent and CFX</li>
+                <li>Gas Turbine Cooling Systems and Advanced Turbulence Modeling</li>
+                <li>Sustainable Building Design and Passive Energy Conservation</li>
+                <li>Wearable Thermal Management Systems</li>
+                <li>Bio-mimetic Thermal Manikin Testing and Experimental Validation</li>
+                <li>Thermoregulation Modeling and Human Heat Stress Assessment</li>
+            </ul>
+
+            <h3>Key Achievements</h3>
+            <div class="achievement">
+                <div class="achievement-icon">✓</div>
+                <div class="achievement-content">
+                    <h4>Published Research</h4>
+                    <p>8 first-author SCI journal articles in high-impact journals (IF: 3.5-9.0)</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">✓</div>
+                <div class="achievement-content">
+                    <h4>Heat Transfer Correlations</h4>
+                    <p>Developed validated correlations for novel cooling geometries</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">✓</div>
+                <div class="achievement-content">
+                    <h4>Book Chapters</h4>
+                    <p>5 chapters in Taylor & Francis and CRC Press publications</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">✓</div>
+                <div class="achievement-content">
+                    <h4>PhD Excellence</h4>
+                    <p>Completed PhD with CGPA 9.778/10 and Best Research Paper Award (2024)</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">✓</div>
+                <div class="achievement-content">
+                    <h4>Fellowships</h4>
+                    <p>ANRF National Post-Doctoral Fellowship (2025) & CSIR Research Associateship (2025)</p>
+                </div>
+            </div>
+
+            <h3>Quick Facts</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">Current Position</div>
+                    <div>National Post-Doctoral Fellow (ANRF-NPDF)</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Institution</div>
+                    <div>IIT Hyderabad</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Location</div>
+                    <div>Hyderabad, Telangana, India</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Research Focus</div>
+                    <div>PCM-based Cooling Vests, Heat Transfer, Wearable Technologies</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research">
+            <h2>Research</h2>
+
+            <h3>Current Research Project</h3>
+            <div class="project-card">
+                <h4>Development and Integration of PCM-based Cooling Vests for Heatstroke Prevention in India's Extreme Weather Conditions</h4>
+                <div class="project-meta">
+                    <div class="project-meta-item">
+                        <span class="project-meta-label">Institution:</span>
+                        <span>IIT Hyderabad</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <span class="project-meta-label">Duration:</span>
+                        <span>December 2025 - Present</span>
+                    </div>
+                    <div class="project-meta-item">
+                        <span class="project-meta-label">Funding:</span>
+                        <span>ANRF (PDF/2025/000302)</span>
+                    </div>
+                </div>
+                <p>This National Post-Doctoral Fellowship project addresses a critical public health challenge in India - heatstroke prevention in extreme weather conditions (40-55°C, 40-90% humidity). The research integrates thermal engineering, materials science, and human physiology to develop wearable cooling technology.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Key Research Components:</h4>
+                <ul>
+                    <li><strong>Multi-physics CFD Simulations:</strong> Phase change material thermal modeling, heat transfer within cooling vest channels, human thermoregulation models</li>
+                    <li><strong>Bio-mimetic Thermal Manikin Testing:</strong> Custom-fabricated torso thermal manikin with multi-zone heating, integrated sweating simulation system, real-time physiological sensor integration</li>
+                    <li><strong>Thermoregulation Modeling:</strong> Predictive thermoregulation-behavioral adaptation models, real-time heatstroke risk assessment algorithms</li>
+                </ul>
+            </div>
+
+            <h3>Research Experience</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4>National Post-Doctoral Fellow (ANRF-NPDF)</h4>
+                    <div class="timeline-meta">IIT Hyderabad | December 2025 - Present</div>
+                    <p>PCM-based Cooling Vests for Heatstroke Prevention. Focus: Multi-physics CFD, Bio-mimetic testing, Thermoregulation modeling.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4>Post-Doctoral Fellow</h4>
+                    <div class="timeline-meta">IIT Bombay | June 2025 - December 2025</div>
+                    <p>Heat Transfer Enhancement in Rotating Pin-Fin Ducts. Focus: Gas turbine cooling, Experimental analysis, ANSYS Fluent. Publications: 2 papers.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4>Senior Research Fellow</h4>
+                    <div class="timeline-meta">IIT Delhi | July 2024 - January 2025</div>
+                    <p>Sustainable Infrastructure for Himalayan Regions. Focus: Building design optimization, Genetic algorithms, EnergyPlus.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4>PhD Scholar</h4>
+                    <div class="timeline-meta">IIT Roorkee | August 2020 - July 2024</div>
+                    <p>Corrugated Double-Pass Solar Air Heater with PCM. CGPA: 9.778/10. Fellowship: PMRF. Publications: 7 SCI papers as first author.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4>M.Tech Scholar</h4>
+                    <div class="timeline-meta">RTMNU Nagpur | 2018 - 2020</div>
+                    <p>Concentrated Solar Thermal Power Plant with Molten Salt. CGPA: 9.26/10. Rank: 1st in University.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <h4>B.E. Scholar</h4>
+                    <div class="timeline-meta">NPTI Nagpur | 2013 - 2016</div>
+                    <p>Vibration Analysis of Rotating Machines. CGPA: 9.00/10.</p>
+                </div>
+            </div>
+
+            <h3>Research Tools & Expertise</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>CFD Software</h4>
+                    <div class="skill-item">✓ ANSYS Fluent</div>
+                    <div class="skill-item">✓ ANSYS CFX</div>
+                    <div class="skill-item">✓ ANSYS Meshing</div>
+                    <div class="skill-item">✓ Salome</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Energy & Building</h4>
+                    <div class="skill-item">✓ EnergyPlus</div>
+                    <div class="skill-item">✓ DesignBuilder</div>
+                    <div class="skill-item">✓ Climate Consultant</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Programming & Analysis</h4>
+                    <div class="skill-item">✓ MATLAB</div>
+                    <div class="skill-item">✓ Python</div>
+                    <div class="skill-item">✓ Genetic Algorithms</div>
+                    <div class="skill-item">✓ Statistical Analysis</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Turbulence Modeling</h4>
+                    <div class="skill-item">✓ k-epsilon Models</div>
+                    <div class="skill-item">✓ k-omega Models</div>
+                    <div class="skill-item">✓ SST Models</div>
+                    <div class="skill-item">✓ LES</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Experimental Techniques</h4>
+                    <div class="skill-item">✓ Thermal Manikin Design</div>
+                    <div class="skill-item">✓ Temperature Measurement</div>
+                    <div class="skill-item">✓ Heat Flux Measurement</div>
+                    <div class="skill-item">✓ Data Acquisition</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Specialized Skills</h4>
+                    <div class="skill-item">✓ Heat Transfer Correlations</div>
+                    <div class="skill-item">✓ Bioheat Equations</div>
+                    <div class="skill-item">✓ Thermoregulation Modeling</div>
+                    <div class="skill-item">✓ System Optimization</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>Publications</h2>
+
+            <h3>Publication Summary</h3>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Total Publications</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">SCI Journal Articles</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Conference Papers</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Book Chapters</div>
+                </div>
+            </div>
+
+            <h3>SCI Journal Articles</h3>
+            <div class="publication">
+                <div class="publication-title">Investigating Heat Transfer Enhancement in a Rectangular Duct with Staggered Pin-Fin Arrays: A Comparative Study of RANS Turbulence Models</div>
+                <div class="publication-authors">Hedau, A. J., Bhosale, A. C., & Singal, S. K. (2024)</div>
+                <div class="publication-journal">Heat Transfer Engineering</div>
+                <div class="publication-details">Impact Factor: 3.8 | Published: September 2024</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Performance Analysis of Corrugated Double-Pass Solar Air Heater with Phase Change Material</div>
+                <div class="publication-authors">Hedau, A. J., Singal, S. K., & Bhosale, A. C. (2024)</div>
+                <div class="publication-journal">International Communications in Heat and Mass Transfer</div>
+                <div class="publication-details">Impact Factor: 6.4 | Published: July 2024</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Experimental and CFD-Based Investigation of Heat Transfer Enhancement in Pin-Fin Solar Air Heater</div>
+                <div class="publication-authors">Hedau, A. J., Singal, S. K., & Saini, R. P. (2023)</div>
+                <div class="publication-journal">Solar Energy</div>
+                <div class="publication-details">Impact Factor: 7.2 | Published: 2023</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Nusselt Number and Friction Factor Correlations for Corrugated Double-Pass Solar Air Heater: Experimental Validation and Turbulence Analysis</div>
+                <div class="publication-authors">Hedau, A. J., Singal, S. K., Bhosale, A. C., & Patel, R. (2023)</div>
+                <div class="publication-journal">Renewable Energy</div>
+                <div class="publication-details">Impact Factor: 9.0 | Published: 2023</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Heat Transfer and Fluid Flow Analysis in Double-Pass Solar Air Heater with Artificial Roughness</div>
+                <div class="publication-authors">Hedau, A. J., Singal, S. K., & Bhosale, A. C. (2022)</div>
+                <div class="publication-journal">Applied Thermal Engineering</div>
+                <div class="publication-details">Impact Factor: 6.1 | Published: 2022</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Thermal Performance Enhancement of Solar Air Heater Using Phase Change Material Integration</div>
+                <div class="publication-authors">Hedau, A. J., Singal, S. K., & Saini, R. P. (2022)</div>
+                <div class="publication-journal">Journal of Thermal Science and Engineering Progress</div>
+                <div class="publication-details">Impact Factor: 3.5 | Published: 2022</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">CFD Simulations of Heat Transfer in Solar Air Heater with Artificial Roughness Elements</div>
+                <div class="publication-authors">Hedau, A. J., Bhosale, A. C., & Singal, S. K. (2021)</div>
+                <div class="publication-journal">Thermal Science</div>
+                <div class="publication-details">Impact Factor: 4.2 | Published: 2021</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Experimental Investigation of Heat Transfer Enhancement in Double-Pass Solar Air Heater with Phase Change Material Storage</div>
+                <div class="publication-authors">Hedau, A. J., Singal, S. K., & Saini, R. P. (2021)</div>
+                <div class="publication-journal">International Journal of Heat and Mass Transfer</div>
+                <div class="publication-details">Impact Factor: 5.5 | Published: 2021</div>
+            </div>
+
+            <h3>Publication Access</h3>
+            <p>Access my publications through:</p>
+            <ul>
+                <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=K0BVlVsAAAAJ&hl=en" target="_blank">https://scholar.google.com/citations?user=K0BVlVsAAAAJ</a></li>
+                <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-0620-9895" target="_blank">https://orcid.org/0000-0003-0620-9895</a></li>
+                <li><strong>For full-text access:</strong> ankush.hedau@gmail.com</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education & Qualifications</h2>
+
+            <h3>Academic Qualifications</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Degree</th>
+                        <th>Field</th>
+                        <th>Institution</th>
+                        <th>CGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>Ph.D.</td>
+                        <td>Hydro & Renewable Energy</td>
+                        <td>IIT Roorkee</td>
+                        <td>9.778/10 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>M.Tech</td>
+                        <td>Heat Power Engineering</td>
+                        <td>RTMNU Nagpur (Ranked 1st)</td>
+                        <td>9.26/10 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>B.E.</td>
+                        <td>Power Engineering</td>
+                        <td>NPTI Nagpur</td>
+                        <td>9.00/10 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>Polytechnic</td>
+                        <td>Electrical Engineering</td>
+                        <td>Govt. Polytechnic Sakoli (Ranked 1st)</td>
+                        <td>82.41/100 ✓</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Fellowships & Awards (2021-2025)</h3>
+            <div class="achievement">
+                <div class="achievement-icon">⭐</div>
+                <div class="achievement-content">
+                    <h4>ANRF National Post-Doctoral Fellowship (2025)</h4>
+                    <p>Sanction Order: PDF/2025/000302 | Status: Active</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">⭐</div>
+                <div class="achievement-content">
+                    <h4>CSIR Research Associateship (2025)</h4>
+                    <p>Council of Scientific and Industrial Research | Status: Active</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">⭐</div>
+                <div class="achievement-content">
+                    <h4>Best Research Paper Award (2024)</h4>
+                    <p>Department of Hydro and Renewable Energy, IIT Roorkee</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">⭐</div>
+                <div class="achievement-content">
+                    <h4>Prime Minister Research Fellowship (PMRF) (2021-2024)</h4>
+                    <p>Ministry of Education | Sanction Order: PM-31-22-675-414</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">⭐</div>
+                <div class="achievement-content">
+                    <h4>GATE Qualification (2018)</h4>
+                    <p>Mechanical Engineering | Percentile: 94.33/100</p>
+                </div>
+            </div>
+
+            <h3>Professional Membership</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">International Solar Energy Society (ISES)</div>
+                    <div>Silver Member | Valid: October 2023 - October 2028</div>
+                </div>
+            </div>
+
+            <h3>Research Interests</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Primary Areas</h4>
+                    <div class="skill-item">• Heat Transfer Enhancement</div>
+                    <div class="skill-item">• Phase Change Materials (PCM)</div>
+                    <div class="skill-item">• Gas Turbine Cooling</div>
+                    <div class="skill-item">• Wearable Thermal Management</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Computational Methods</h4>
+                    <div class="skill-item">• Computational Fluid Dynamics (CFD)</div>
+                    <div class="skill-item">• Turbulence Modeling</div>
+                    <div class="skill-item">• Multi-physics Simulation</div>
+                    <div class="skill-item">• System Optimization</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Experimental Work</h4>
+                    <div class="skill-item">• Bio-mimetic Testing</div>
+                    <div class="skill-item">• Thermal Manikin Design</div>
+                    <div class="skill-item">• Uncertainty Quantification</div>
+                    <div class="skill-item">• Heat Stress Assessment</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Applications</h4>
+                    <div class="skill-item">• Heatstroke Prevention</div>
+                    <div class="skill-item">• Building Design</div>
+                    <div class="skill-item">• Renewable Energy</div>
+                    <div class="skill-item">• Industrial Cooling</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Emerging Technologies</h4>
+                    <div class="skill-item">• Bio-mimetic Design</div>
+                    <div class="skill-item">• Wearable Computing</div>
+                    <div class="skill-item">• Real-time Monitoring</div>
+                    <div class="skill-item">• ML for Thermal Systems</div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Sustainable Focus</h4>
+                    <div class="skill-item">• Solar Thermal Systems</div>
+                    <div class="skill-item">• Energy Efficiency</div>
+                    <div class="skill-item">• Passive Strategies</div>
+                    <div class="skill-item">• Climate Adaptation</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact & Collaboration</h2>
+
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">📧 Email</div>
+                    <div><a href="mailto:ankush.hedau@gmail.com">ankush.hedau@gmail.com</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">📞 Phone</div>
+                    <div><a href="tel:+919326861543">+91 9326861543</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">📍 Location</div>
+                    <div>Hyderabad, Telangana, India - 502285</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">🎓 Institution</div>
+                    <div>Indian Institute of Technology Hyderabad</div>
+                </div>
+            </div>
+
+            <h3>Research Profiles</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">Google Scholar</div>
+                    <div><a href="https://scholar.google.com/citations?user=K0BVlVsAAAAJ&hl=en" target="_blank">View Profile</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">ORCID</div>
+                    <div><a href="https://orcid.org/0000-0003-0620-9895" target="_blank">0000-0003-0620-9895</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">LinkedIn</div>
+                    <div><a href="https://www.linkedin.com/in/dr-ankush-hedau-2747a1b5/" target="_blank">Connect on LinkedIn</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">IIT Hyderabad</div>
+                    <div><a href="https://www.iith.ac.in/" target="_blank">Visit IIT Hyderabad</a></div>
+                </div>
+            </div>
+
+            <h3>Current Research Advisor</h3>
+            <div style="background: var(--primary-light); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Prof. Ankush Kumar Jaiswal</h4>
+                <p><strong>Department:</strong> Mechanical and Aerospace Engineering, IIT Hyderabad</p>
+                <p><strong>Email:</strong> <a href="mailto:ankush@mae.iith.ac.in">ankush@mae.iith.ac.in</a></p>
+                <p><strong>Research Focus:</strong> Thermal management, Wearable cooling systems, Advanced cooling technologies</p>
+            </div>
+
+            <h3>Collaboration Opportunities</h3>
+            <p>I am interested in collaborative research in:</p>
+            <ul>
+                <li>Phase Change Material (PCM) Applications</li>
+                <li>Heat Transfer Enhancement Technologies</li>
+                <li>Computational Fluid Dynamics (CFD) Studies</li>
+                <li>Occupational Heat Stress Mitigation</li>
+                <li>Renewable Energy Systems Integration</li>
+                <li>Gas Turbine Cooling Optimization</li>
+            </ul>
+
+            <h3>How to Reach Out</h3>
+            <p>For research inquiries and collaboration proposals, please contact me with:</p>
+            <ol>
+                <li>Brief description of your research/project</li>
+                <li>Proposed collaboration timeline</li>
+                <li>Expected outcomes and deliverables</li>
+                <li>Funding status (if applicable)</li>
+                <li>Your institutional affiliation</li>
+            </ol>
+            <p><em>I typically respond within 24-48 hours for research inquiries.</em></p>
+        </section>
+
+        <!-- Recent News Section -->
+        <section>
+            <h2>Latest News & Updates</h2>
+
+            <h3>January 2026</h3>
+            <div class="achievement">
+                <div class="achievement-icon">🎉</div>
+                <div class="achievement-content">
+                    <h4>Started New Position: National Post-Doctoral Fellow (ANRF-NPDF)</h4>
+                    <p>December 1, 2025 | IIT Hyderabad | PCM-based Cooling Vests for Heatstroke Prevention</p>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <div class="achievement-icon">📢</div>
+                <div class="achievement-content">
+                    <h4>Updated Research Website & Profile</h4>
+                    <p>January 9, 2026 | Comprehensive website refresh with latest CV, publications, and current research focus</p>
+                </div>
+            </div>
+
+            <h3>December 2025</h3>
+            <div class="achievement">
+                <div class="achievement-icon">✅</div>
+                <div class="achievement-content">
+                    <h4>Completed Postdoctoral Fellowship at IIT Bombay</h4>
+                    <p>June 2025 - December 2025 | Heat Transfer Enhancement in Rotating Pin-Fin Ducts | 2 papers published</p>
+                </div>
+            </div>
+
+            <h3>Upcoming Events</h3>
+            <p><strong>2026 Research Activities:</strong></p>
+            <ul>
+                <li>Q1 2026: Thermal manikin prototype testing and PCM material characterization</li>
+                <li>Q2 2026: Conference presentations and journal manuscript submissions</li>
+                <li>Q3 2026: Mid-project review and optimization studies</li>
+                <li>Q4 2026: Annual report and collaboration expansion</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dr. Ankush Jageshwar Hedau. All rights reserved.</p>
+        <p>National Post-Doctoral Fellow (ANRF-NPDF) | Indian Institute of Technology Hyderabad</p>
+        <p>Last Updated: January 9, 2026</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // Update active link
+                    document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
